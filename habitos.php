@@ -5,6 +5,7 @@
 <body>
 <h1>Hábitos</h1>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 <form name="habito" method="post" action="habitos.php">
@@ -39,15 +40,18 @@ echo "Hábito borrado";
 $lectura = "SELECT * FROM habitos;";
 $habitos = mysqli_query($conn, $lectura);
 echo "Número de hábitos: " . mysqli_num_rows($habitos) . "<br>";
+if (mysqli_num_rows_($habitos) >0){
 while($hab = mysqli_fetch_array($habitos)){
 echo $hab['ID'] . " - " . $hab['Nome'] . "<a
 href=\"/habitos.php?borrar=" . $hab['ID'] . "\">Borrar</a><br>";
 
 }
-
+{else{
+echo "Ainda non se creou ningun hábito";
 
 ?>
 <p>
+<button type="button" class="btn btn-primary">Primary</button>
 
 </body>
 </html>
