@@ -46,8 +46,9 @@ echo $hab['ID'] . " - " . $hab['Nome'] . "<a
 href=\"/habitos.php?borrar=" . $hab['ID'] . "\">Borrar</a><br>";
 
 }
-{else{
+} else {
 echo "Ainda non se creou ningun hábito";
+}
 
 ?>
 <p>

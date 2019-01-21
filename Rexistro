@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Rexistro</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+</head>
+<body>
+<?php
+include './database.php';
+?>
+<table>
+<tr>
+<td>NADA<td>
+<td>Luns<td>
+<td>Martes<td>
+<td>Mercores<td>
+<tr>
+<tr>
+<td>Durmir<td>
+<td>Deporte<td>
+<td>Estudo<td>
+<td>Jugar<td>
+<tr>
+
+<table>
+</body>
+</html>
